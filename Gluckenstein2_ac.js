@@ -64,7 +64,7 @@ function updatedisplay()
     if (YouareDead)
     {
         TempName="Dead";
-        TempDescription="Your torch catches the library on fire. You watch as the manor"
+        TempDescription="Your torch catches the library on fire. You watch as the manor" +
         " is engulfed in flames. <br><br> Type 'restart' to try again.";
         TempExits=[0,0,0,0,0,0];
     }
@@ -219,7 +219,7 @@ function DoUse()
                 ropecut=true;
                 items[ItemNum.weight].roomNumber=0;
                 items[ItemNum.rope].itemDescription="a cut rope."
-                items[ItemNum.rope].itemDetail="The rope that once held the weight holding down"
+                items[ItemNum.rope].itemDetail="The rope that once held the weight holding down" +
                 " the dumbwaiter. It's cut in half now."
 
             }
@@ -389,12 +389,14 @@ function DoTele()
 
 function DoHelp()
 {
-    resulttext="In this game, you are attempting to leave the manor you fins yourself trapped in."
-    " To move through rooms you can say 'move' or 'go' and then the direction you want to"
-    " move in. Alternatively, you can just type the first letter of the direction you want to go"
-    " in, such as 'n.' If you want to take an item, you can type 'take' or 'get' followed by the"
-    " item you want to take. You can also drop items with 'drop.' Try experimenting with"
-    " different verbs if you get stuck."
+    resulttext="In this game, you are attempting to leave the manor you fins yourself" +
+    " trapped in. To move through rooms you can say 'move' or" + 
+    " 'go' and then the direction you want to move in. Alternatively," +
+    " you can just type the first letter of the direction you want to go" +
+    " in, such as 'n.' If you want to take an item, you can type" +
+    " 'take' or 'get' followed by the" +
+    " item you want to take. You can also drop items with 'drop.'" +
+    " Try experimenting with different verbs if you get stuck."
 }
 
 function DoMove()
@@ -555,40 +557,40 @@ function handleclick()
 function setupgame() 
 {
     currentroom=1
-    var descriptionroom1 = "You are in the Foyer of the manor. The front door is locked"
+    var descriptionroom1 = "You are in the Foyer of the manor. The front door is locked" +
     " and all the windows in this place are boarded up.";
-    var descriptionroom2 = "You are in the Living Room. Multiple soft seats are"
+    var descriptionroom2 = "You are in the Living Room. Multiple soft seats are" +
     " placed around a single cofee table with various materials scattered on top of it.";
-    var descriptionroom3 = "You are in the Dining Room. No plates or silverware"
+    var descriptionroom3 = "You are in the Dining Room. No plates or silverware" +
     " are placed on the table, but a single wine bottle sits there.";
-    var descriptionroom4 = "You are in the Kitchen. Interestingly, there seems "
-    "to be no food in the cabinet or lying around. There appears to"
+    var descriptionroom4 = "You are in the Kitchen. Interestingly, there seems " +
+    "to be no food in the cabinet or lying around. There appears to" +
     " be a dumbwaiter in the corner of the room.";
-    var descriptionroom5 = "You are in the Broom Closet. Somewhat "
+    var descriptionroom5 = "You are in the Broom Closet. Somewhat " +
     "ironically, it seems to be the dustiest place in the manor so far.";
-    var descriptionroom6 = "You are in the Garage. The room is oddly barren,"
+    var descriptionroom6 = "You are in the Garage. The room is oddly barren," +
     " containing no car at all. A flashlight on a tower of unused paint cans.";
-    var descriptionroom7 = "You are in the Game Room. Various card games are"
+    var descriptionroom7 = "You are in the Game Room. Various card games are" +
     " strewn about the many small tables in the room, seemingly stopped mid-game.";
     var descriptionroom8 = "A long spiral staircase descends into the floor below.";
-    var descriptionroom9 = "You are in the Library. Each bookshelf is packed with volumes"
+    var descriptionroom9 = "You are in the Library. Each bookshelf is packed with volumes" +
     " and extends far enough there are ladders for reaching them. A key sits on one of them.";
-    var descriptionroom10 = "You are in the Laundry Room. Folded clothes sit in a"
+    var descriptionroom10 = "You are in the Laundry Room. Folded clothes sit in a" +
     " basket, waiting to be carried into a wardrobe.";
-    var descriptionroom11 = "You are in the Basement Stairwell. You can feel cold air"
+    var descriptionroom11 = "You are in the Basement Stairwell. You can feel cold air" +
     " trickling in from the other side of the door.";
-    var descriptionroom12 = "You are in the Specimen Room. Dead animals are"
+    var descriptionroom12 = "You are in the Specimen Room. Dead animals are" +
     " preserved in cold storage.";
     var descriptionroom13 = "You are in the Pipe Room. The ceiling is covered in frozen pipes.";
-    var descriptionroom14 = "You are in the Icebox. Frozen food sits in the many shelves of"
-    " this room. You spot a familiar dumbwaiter in"
+    var descriptionroom14 = "You are in the Icebox. Frozen food sits in the many shelves of" +
+    " this room. You spot a familiar dumbwaiter in" +
     " the corner of the room, held in place by a weight.";
-    var descriptionroom15 = "You are in the Master Bedroom. The bed looks quite comfy,"
+    var descriptionroom15 = "You are in the Master Bedroom. The bed looks quite comfy," +
     " and its sheets seem very thick. The door to this place is bolted shut,";
-    var descriptionroom16 = "Congratulations! You have successfully escaped the manor."
+    var descriptionroom16 = "Congratulations! You have successfully escaped the manor." +
     " If you would like to try again, type 'restart.'";
-    colddescription = "It's too cold to think."
-    darkdescription = "It's too dark to see anything."
+    colddescription = "It's too cold to think.";
+    darkdescription = "It's too dark to see anything.";
 
     var room1 = new Room(1, "Foyer", descriptionroom1, [2, 0, 16, 0, 0, 0]);
     rooms[1] = room1;
@@ -622,9 +624,9 @@ function setupgame()
     rooms[15] = room15;
     var room16 = new Room(16, "Victory!", descriptionroom16, [0, 0, 0, 0, 0, 0]);
     rooms[16] = room16;
-    bookdescripton = "You decide to thumb through the pages for a moment. One page reads:"
-    " To create a torch, you can wrap a scrap of cloth to"
-    " the end of a dry stick and light it on your campfire."
+    bookdescripton = "You decide to thumb through the pages for a moment. One page reads:" +
+    " To create a torch, you can wrap a scrap of cloth to" +
+    " the end of a dry stick and light it on your campfire." +
     var item0 = new Item(0, "jacket", "a threadbare jacket",
      "This Jacket is so well worn, it's as if it's more holes than cloth.", 1);
     items[0] = item0;
