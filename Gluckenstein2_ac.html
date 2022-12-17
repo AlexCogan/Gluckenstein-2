@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head> </head>
+<body onload="setupgame()">
+    <p id="roomname">room goes here.</p>
+    <p id="roomdesc">room description goes here</p>
+    <strong>You can see the following exits:</strong>
+    <p id="roomexits">exits go here</p>
+    <strong>You can see the following objects:</strong>
+    <p id="roomitems">items in the room go here</p>
+    <strong>You are carrying the following items:</strong>
+    <p id="invitems">items in your inventory go here</p>
+    <br>
+    <p>What would you like to do?</p>
+    <input type='text' id='command'>
+    <button type="button" onclick="handleclick()" >Submit</button>
+    <br>
+    <p>Type 'help' to view the list of inputs</p>
+    <p id="result"></p>
+</body>    
+
+    <script src="Gluckenstein2_ac.js"></script>
+    
