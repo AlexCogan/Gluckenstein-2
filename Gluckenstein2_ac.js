@@ -626,7 +626,7 @@ function setupgame()
     rooms[16] = room16;
     bookdescripton = "You decide to thumb through the pages for a moment. One page reads:" +
     " To create a torch, you can wrap a scrap of cloth to" +
-    " the end of a dry stick and light it on your campfire." +
+    " the end of a dry stick and light it on your campfire.";
     var item0 = new Item(0, "jacket", "a threadbare jacket",
      "This Jacket is so well worn, it's as if it's more holes than cloth.", 1);
     items[0] = item0;
