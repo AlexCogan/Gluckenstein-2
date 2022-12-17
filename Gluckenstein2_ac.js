@@ -389,7 +389,7 @@ function DoTele()
 
 function DoHelp()
 {
-    resulttext="In this game, you are attempting to leave the manor you fins yourself" +
+    resulttext="In this game, you are attempting to leave the manor you find yourself" +
     " trapped in. To move through rooms you can say 'move' or" + 
     " 'go' and then the direction you want to move in. Alternatively," +
     " you can just type the first letter of the direction you want to go" +
@@ -569,7 +569,7 @@ function setupgame()
     var descriptionroom5 = "You are in the Broom Closet. Somewhat " +
     "ironically, it seems to be the dustiest place in the manor so far.";
     var descriptionroom6 = "You are in the Garage. The room is oddly barren," +
-    " containing no car at all. A flashlight on a tower of unused paint cans.";
+    " containing no car at all. A flashlight sits on a tower of unused paint cans.";
     var descriptionroom7 = "You are in the Game Room. Various card games are" +
     " strewn about the many small tables in the room, seemingly stopped mid-game.";
     var descriptionroom8 = "A long spiral staircase descends into the floor below.";
@@ -639,10 +639,10 @@ function setupgame()
      "An empty wine bottle. It looks expensive.", 3);
     items[3] = item3;
     var item4 = new Item(4, "bottle", "a broken bottle",
-     "A broken bottle. It's jagged edges are quite sharp.",  0);
+     "A broken bottle. Its jagged edges are quite sharp.",  0);
     items[4] = item4;
     var item5 = new Item(5, "red key", "a red key",
-     "A blue key. It's stained with some tomato sauce.", 4);
+     "A red key. It's stained with some tomato sauce.", 4);
     items[5] = item5;
     var item6 = new Item(6, "broom", "an old broom",
      "An old dusty broom. It's quite dry.", 5);
@@ -657,7 +657,7 @@ function setupgame()
      "A winter coat. It should be able to keep you warm in frigid areas.", 10);
     items[9] = item9;
     var item10 = new Item(10, "weight", "a large and heavy weight",
-     "The weight is holding the dumbwaiter in place, keeping it from moving anything older.", 14);
+     "The weight is holding the dumbwaiter in place, keeping it from moving anything.", 14);
     items[10] = item10;
     var item11 = new Item(11, "rope", "a rope holding the weight",
      "The rope is the only thing holding the weight in place.", 14);
